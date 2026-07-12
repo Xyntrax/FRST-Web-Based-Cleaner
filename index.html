@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRST Log Cleaner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FRST LOG CLEANER</h1>
+            <p class="subtitle">Upload FRST.txt and Addition.txt to strip out known clean strings</p>
+        </header>
+
+        <div class="drop-zone" id="dropZone">
+            <p class="drop-text">drag &amp; drop the logs here</p>
+            <p class="drop-small">or click to browse</p>
+            <input type="file" id="fileInput" multiple accept=".txt" />
+        </div>
+
+        <div class="file-list" id="fileList"></div>
+
+        <button class="btn btn-clean" id="cleanBtn" disabled>Clean Logs</button>
+
+        <div class="results" id="results">
+            <h2>Results</h2>
+            <div class="stats" id="stats"></div>
+            <div class="downloads" id="downloads"></div>
+        </div>
+
+        <div class="footer">
+            <span>a web-based log cleaner for malware removal helpers to ease log analysis.</span>
+            <span>built by xyntrax</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
