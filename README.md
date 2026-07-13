@@ -8,7 +8,7 @@ The logic was ported to JavaScript so you can clean logs from anywhere without c
 
 1. Upload **FRST.txt** and **Addition.txt**
 2. The tool removes lines containing known clean strings (*browser extensions, legitimate software vendors, etc.*)
-3. Lines containing important flags are preserved
+3. Matching lines are removed from the cleaned logs and saved into a separate file so they can still be reviewed
 
 ## Output Files
 
